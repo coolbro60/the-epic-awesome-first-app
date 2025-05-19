@@ -67,7 +67,14 @@ flutter:
    - assets/icons/
    - assets/images/
    - assets/videos/
-  
+
+  fonts:     
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/Nunito-VariableFont_wght.ttf
+        - asset: assets/fonts/Nunito-Italic-VariableFont_wght.ttf
+          style: italic
+
   
 
   # An image asset can refer to one or more resolution-specific "variants", see
