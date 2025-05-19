@@ -74,6 +74,11 @@ flutter:
         - asset: assets/fonts/Nunito-VariableFont_wght.ttf
         - asset: assets/fonts/Nunito-Italic-VariableFont_wght.ttf
           style: italic
+    - family: Rubik
+      fonts: 
+        - asset: assets/fonts/Rubik-VariableFont_wght.ttf
+        - asset: assets/fonts/Rubik-Italic-VariableFont_wght.ttf
+          style: italic
 
   
 
