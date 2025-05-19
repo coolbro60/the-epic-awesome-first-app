@@ -14,7 +14,6 @@ class TAppTheme {
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true, 
     fontFamily: "Nunito",
-    
     fontFamilyFallback: ["Rubik"],
     brightness: Brightness.light,
     primaryColor: Colors.teal,
@@ -27,8 +26,6 @@ class TAppTheme {
     elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme,
     outlinedButtonTheme: TOutlinedButtonTheme.lightOutlinedButtonTheme,
     inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
-
-
   );
 
   static ThemeData darkTheme = ThemeData(
