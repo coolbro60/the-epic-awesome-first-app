@@ -14,6 +14,7 @@ class TAppTheme {
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true, 
     fontFamily: "Nunito",
+    
     brightness: Brightness.light,
     primaryColor: Colors.teal,
     textTheme: TTextTheme.lightTextTheme,
