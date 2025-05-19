@@ -15,6 +15,7 @@ class TAppTheme {
     useMaterial3: true, 
     fontFamily: "Nunito",
     
+    fontFamilyFallback: ["Rubik"],
     brightness: Brightness.light,
     primaryColor: Colors.teal,
     textTheme: TTextTheme.lightTextTheme,
@@ -33,6 +34,7 @@ class TAppTheme {
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
     fontFamily: "Nunito",
+    fontFamilyFallback: ["Rubik"],
     brightness: Brightness.dark,
     primaryColor: Colors.teal,
     textTheme: TTextTheme.darkTextTheme,
