@@ -1,20 +1,20 @@
-import 'package:MediCheck/util/theme/theme.dart';
+import 'package:MediCheck/app.dart';
 import 'package:flutter/material.dart';
 
+
+// ------- Entry point of flutter app ------ //
 void main() {
+  //add widgets binding
+
+  //init local storage 
+
+  //await native splash
+  
+  //initiate firebase
+  
+  //intialize authentication
+
+  
   runApp(const App());
 }
 
-class App extends StatelessWidget {
-  const App({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      themeMode: ThemeMode.system,
-      theme: TAppTheme.lightTheme,
-      darkTheme: TAppTheme.darkTheme,
-
-    );
-  }
-}
