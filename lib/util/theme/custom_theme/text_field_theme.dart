@@ -18,11 +18,11 @@ class TTextFormFieldTheme {
     ),
     errorBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(width: 1, color: Colors.red),
+      borderSide: const BorderSide(width: 1, color: Colors.teal),
     ),
     focusedErrorBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(width: 2, color: Colors.orange),
+      borderSide: const BorderSide(width: 2, color: Color.fromRGBO(246, 176, 146, 0.9)),
     ),
     prefixIconColor: Colors.grey,
     suffixIconColor: Colors.grey,
