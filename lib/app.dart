@@ -1,4 +1,4 @@
-import 'package:MediCheck/features/authentication/screens/onboarding.dart';
+import 'package:MediCheck/features/authentication/screens/onboarding/onboarding.dart';
 import 'package:MediCheck/util/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
