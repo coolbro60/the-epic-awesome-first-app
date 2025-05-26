@@ -28,7 +28,7 @@ class TTextFormFieldTheme {
     suffixIconColor: Colors.grey,
     constraints: const BoxConstraints.expand(height: 14),
     labelStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.black),
-    hintStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.black),
+    hintStyle: const TextStyle().copyWith(fontSize: 14, color: const Color.fromRGBO(246, 176, 146, 0.9)),
     errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal),
     floatingLabelStyle:
         const TextStyle().copyWith(color: Colors.black.withValues(alpha: 0.8)),
@@ -54,13 +54,13 @@ class TTextFormFieldTheme {
     ),
     focusedErrorBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(width: 2, color: Colors.orange),
+      borderSide: const BorderSide(width: 2, color:Color.fromARGB(255, 236, 83, 48)),
     ),
     prefixIconColor: Colors.grey,
     suffixIconColor: Colors.grey,
     constraints: const BoxConstraints.expand(height: 14),
     labelStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.white),
-    hintStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.white),
+    hintStyle: const TextStyle().copyWith(fontSize: 14, color: const Color.fromARGB(255, 236, 83, 48)),
     floatingLabelStyle:
         const TextStyle().copyWith(color: Colors.white.withValues(alpha:0.8)),
   );

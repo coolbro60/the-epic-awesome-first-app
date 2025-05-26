@@ -36,7 +36,7 @@ class TAppTheme {
     primaryColor: Colors.teal,
     textTheme: TTextTheme.darkTextTheme,
     chipTheme: TChipTheme.darkChipTheme,
-    scaffoldBackgroundColor: const Color.fromRGBO(246, 176, 146, 1),
+    scaffoldBackgroundColor: const Color.fromARGB(255, 236, 83, 48),
     appBarTheme: TAppBarTheme.darkAppBarTheme,
     checkboxTheme: TCheckboxTheme.darkCheckboxTheme,
     bottomSheetTheme: TBottomSheetTheme.darkBottomSheetTheme,
