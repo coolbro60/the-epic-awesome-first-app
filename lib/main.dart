@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 void main() {
   //add widgets binding
 
-  //init local storage 
+  //init local storage  
 
   //await native splash
   
