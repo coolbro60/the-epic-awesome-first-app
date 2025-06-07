@@ -5,10 +5,11 @@ import 'package:MediCheck/util/constants/sizes.dart';
 import 'package:MediCheck/util/constants/text_strings.dart';
 import 'package:MediCheck/util/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/get_utils.dart';
 import 'package:iconsax/iconsax.dart';
 
-class loginScreen extends StatelessWidget {
-  const loginScreen({super.key});
+class LoginScreen extends StatelessWidget {
+  const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -84,7 +85,6 @@ class loginScreen extends StatelessWidget {
                       
                       //Create account button
                       SizedBox (width: double.infinity, child: OutlinedButton(onPressed: (){}, child: Text(TTexts.createAccount)) ),
-                      const SizedBox(height: TSizes.spaceBtwInputFields),
                     ],
                   ),
                 ),
@@ -94,11 +94,45 @@ class loginScreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Divider(color: dark ? TColors.darkGrey : TColors.grey, thickness: 0.5, indent: 60, endIndent: 5),
+                  Flexible(child: Divider(color: dark ? TColors.darkGrey : TColors.grey, thickness: 0.5, indent: 60, endIndent: 5)),
+                  Text(TTexts.orSignInWith.capitalize!, style: Theme.of(context).textTheme.labelMedium),
+                  Flexible(child: Divider(color: dark ? TColors.darkGrey : TColors.grey, thickness: 0.5, indent: 5, endIndent: 60)),
                 ],
-              )
+              ),
+              const SizedBox(height: TSizes.spaceBtwSections),
 
               //Footer
+              Row (
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    decoration: BoxDecoration(border: Border.all(color: TColors.grey), borderRadius: BorderRadius.circular(100)),
+                    child: IconButton(
+                      onPressed: () {}, 
+                      icon: const Image(
+                        width: TSizes.iconMd, 
+                        height: TSizes.iconMd,
+                        image: AssetImage(TImages.google),
+
+                      )
+                    )
+                  ), 
+                  const SizedBox(width: TSizes.spaceBtwItems),
+                  Container(
+                    decoration: BoxDecoration(border: Border.all(color: TColors.grey), borderRadius: BorderRadius.circular(100)),
+                    child: IconButton(
+                      onPressed: () {}, 
+                      icon: const Image(
+                        width: TSizes.iconMd, 
+                        height: TSizes.iconMd,
+                        image: AssetImage(TImages.facebook),
+                      )
+                    )
+                  ),
+
+                ],
+                
+              )
             ],
 
           ),
