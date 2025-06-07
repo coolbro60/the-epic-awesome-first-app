@@ -1,20 +1,31 @@
+import 'package:MediCheck/features/authentication/controllers/onboarding_controller.dart';
+import 'package:MediCheck/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
+import 'package:MediCheck/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
 import 'package:MediCheck/util/constants/image_strings.dart';
 import 'package:MediCheck/util/constants/sizes.dart';
 import 'package:MediCheck/util/constants/text_strings.dart';
 import 'package:MediCheck/util/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:iconsax/iconsax.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
+import '../../../../util/constants/colors.dart';
 import '../../../../util/device/device_utility.dart';
-
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(OnBoardingController());
+
+
     return Scaffold(
       body: Stack(
         children: [
           PageView(
+            controller: controller.pageController,
+            onPageChanged: controller.updatePageIndicator,
             children: [
               OnBoardingPage(
                 image: TImages.onBoardingImage1,
@@ -33,12 +44,20 @@ class OnboardingScreen extends StatelessWidget {
               ),
             ],
           ),
-          OnBoardingSkip(),
+          const OnBoardingSkip(),
+
+          const OnBoardingDotNavigation(),
+
+          const OnBoardingNextButton()
         ],
       ),
     );
   }
 }
+
+
+
+
 
 class OnBoardingSkip extends StatelessWidget {
   const OnBoardingSkip({
