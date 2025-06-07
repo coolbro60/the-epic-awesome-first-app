@@ -4,7 +4,7 @@ import '../../../../../util/constants/colors.dart';
 import '../../../../../util/constants/sizes.dart';
 import '../../../../../util/device/device_utility.dart';
 import '../../../../../util/helpers/helper_functions.dart';
-import 'package:MediCheck/features/authentication/controllers/onboarding_controller.dart';
+import '../../../../../features/authentication/controllers/onboarding_controller.dart';
 class OnBoardingDotNavigation extends StatelessWidget {
   const OnBoardingDotNavigation({
     super.key,
